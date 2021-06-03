@@ -1,0 +1,16 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int main() {
+	int i, mass[10] = { 1, 2, 5, 7, 0, 1, 4, 8, 10, 9 };
+	for (i = 0; i < 10; i++) {
+		std::cout << mass[i] << ' ';
+		if (mass[i] % 2 == 0)
+			std::cout << 0 << std::endl;
+		else
+			std::cout << mass[i] << std::endl;
+	}
+	system("pause");
+	return 0;
+}
